@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="./dist/pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <svg id="canvas" width="600" height="600" style="background-color: black">
+            <line x1="300" y1="0" x2="300" y2="600" style="stroke:white;stroke-width: 5;stroke-dasharray: 12"/>
+            <rect id="compPaddle" x="25" y="250" width="10" height="100" style="fill:white;"></rect>
+            <rect id="userPaddle" x="565" y="250" width="10" height="100" style="fill:turquoise"></rect>
+            <text id="compScore" x="125" y="100" style="fill:white;font-size: 60px">0</text>
+            <text id="userScore" x="450" y="100" style="fill:turquoise;font-size: 60px">0</text>
+            <circle id="ball" cx=300 cy=300 r=7 velocityX=100 velocityY=5 speed=7 style="fill:white"></circle>
+
+            <text id='game_over' x="100" y="300" fill="red" font-size="80px" ></text>
+            <text id='player_wins' x="150" y="400" fill="white" font-size="60px" ></text>
+            <text id='comp_wins' x="150" y="400" fill="white" font-size="60px" ></text>
+            <text id='enter' x="200" y="575" fill="white" font-size="20px" ></text>
+
+      
+        
+        </svg>
+       
+
+    </body>
+</html>
